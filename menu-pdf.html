@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu PDF — Le Jardin des Saveurs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="menu-pdf.css" />
+</head>
+<body>
+
+  <!-- BARRE RETOUR (hors PDF) -->
+  <div class="top-bar no-print">
+    <a href="index.html" class="back-link">← Retour à l'accueil</a>
+    <span class="top-label">Aperçu du menu PDF</span>
+    <button class="print-btn" onclick="window.print()">Imprimer / Télécharger PDF</button>
+  </div>
+
+  <!-- PAGE A4 -->
+  <div class="page-wrapper">
+    <div class="page">
+
+      <!-- EN-TÊTE -->
+      <header class="page-header">
+        <div class="header-ornament">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line"></div>
+        </div>
+        <p class="header-eyebrow">Restaurant gastronomique</p>
+        <h1 class="header-title">Le Jardin<br /><em>des Saveurs</em></h1>
+        <p class="header-sub">Une cuisine de terroir revisitée avec passion</p>
+        <div class="header-ornament">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line"></div>
+        </div>
+      </header>
+
+      <!-- CORPS DU MENU -->
+      <div class="page-body">
+
+        <!-- ENTRÉES -->
+        <section class="menu-sec">
+          <div class="sec-title-wrap">
+            <div class="sec-rule"></div>
+            <h2 class="sec-title">~ Entrées ~</h2>
+            <div class="sec-rule"></div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Velouté de butternut</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Crème de courge, huile de noisette, chips de lard et herbes fraîches</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Tartare de Saint-Jacques</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Marinées au citron vert, avocat, concombre et caviar de truite</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Terrine de foie gras maison</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Foie gras de canard, brioche toastée, chutney de figues et fleur de sel</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Œuf parfait aux truffes</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Œuf à 63°C, crème de pomme de terre, copeaux de truffe noire du Périgord</p>
+          </div>
+        </section>
+
+        <!-- PLATS -->
+        <section class="menu-sec">
+          <div class="sec-title-wrap">
+            <div class="sec-rule"></div>
+            <h2 class="sec-title">~ Plats ~</h2>
+            <div class="sec-rule"></div>
+          </div>
+
+          <div class="dish dish--featured">
+            <div class="dish-row">
+              <span class="dish-name">Filet de bœuf Rossini <span class="dish-star">★</span></span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Black Angus, foie gras poêlé, sauce Périgueux et gratin dauphinois</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Dos de cabillaud rôti</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Beurre blanc au citron, vierge de tomates cerises et purée de céleri</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Risotto aux morilles</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Riz Carnaroli, morilles fraîches, parmesan 24 mois et beurre de truffe</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Magret de canard aux cerises</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Magret rosé, sauce griotte au poivre long, écrasé de pommes de terre</p>
+          </div>
+        </section>
+
+        <!-- DESSERTS -->
+        <section class="menu-sec">
+          <div class="sec-title-wrap">
+            <div class="sec-rule"></div>
+            <h2 class="sec-title">~ Desserts ~</h2>
+            <div class="sec-rule"></div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Soufflé au Grand Marnier</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Soufflé chaud à l'orange, coulis mandarine et glace vanille Bourbon <em>(15 min)</em></p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Entremet framboise litchi</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Mousse litchi, insert framboise, glaçage miroir et biscuit joconde</p>
+          </div>
+
+          <div class="dish">
+            <div class="dish-row">
+              <span class="dish-name">Mille-feuille à la vanille</span>
+              <span class="dish-dots"></span>
+              <span class="dish-price">XX €</span>
+            </div>
+            <p class="dish-desc">Feuilletage caramélisé, crème diplomate vanille Madagascar, éclats de pralin</p>
+          </div>
+        </section>
+
+        <!-- BOISSONS compactes -->
+        <section class="menu-sec menu-sec--drinks">
+          <div class="sec-title-wrap">
+            <div class="sec-rule"></div>
+            <h2 class="sec-title">~ Boissons ~</h2>
+            <div class="sec-rule"></div>
+          </div>
+
+          <div class="drinks-cols">
+            <div class="drinks-col">
+              <p class="drinks-col-h">Vins au verre</p>
+              <div class="d-row"><span>Sancerre blanc 2022</span><span>XX €</span></div>
+              <div class="d-row"><span>Saint-Émilion rouge 2019</span><span>XX €</span></div>
+              <div class="d-row"><span>Champagne Blanc de Blancs</span><span>XX €</span></div>
+            </div>
+            <div class="drinks-col">
+              <p class="drinks-col-h">Sans alcool &amp; cafés</p>
+              <div class="d-row"><span>Eau minérale 75cl</span><span>XX €</span></div>
+              <div class="d-row"><span>Kombucha du moment</span><span>XX €</span></div>
+              <div class="d-row"><span>Espresso</span><span>XX €</span></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- PIED DE PAGE -->
+      <footer class="page-footer">
+        <div class="footer-ornament">
+          <div class="orn-line"></div>
+          <div class="orn-diamond"></div>
+          <div class="orn-line"></div>
+        </div>
+        <p class="footer-addr">12 rue des Fleurs · 75006 Paris · 01 XX XX XX XX</p>
+        <p class="footer-note">★ Recommandé par le chef &nbsp;·&nbsp; Informations allergènes sur demande</p>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>

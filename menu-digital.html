@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Jardin des Saveurs — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Restaurant gastronomique</p>
+      <h1 class="hero-title">Le Jardin<br /><em>des Saveurs</em></h1>
+      <p class="hero-sub">Une cuisine de terroir revisitée avec passion</p>
+      <div class="hero-divider"></div>
+      <p class="hero-hours">Ouvert du Mardi au Dimanche · 12h–14h30 &amp; 19h–22h30</p>
+    </div>
+    <a href="#menu" class="hero-cta">Découvrir le menu ↓</a>
+  </header>
+
+  <!-- NAV CATEGORIES -->
+  <nav class="cat-nav" id="menu">
+    <button class="cat-btn active" data-cat="all">Tout</button>
+    <button class="cat-btn" data-cat="entrees">Entrées</button>
+    <button class="cat-btn" data-cat="plats">Plats</button>
+    <button class="cat-btn" data-cat="desserts">Desserts</button>
+    <button class="cat-btn" data-cat="boissons">Boissons</button>
+  </nav>
+
+  <!-- MENU SECTIONS -->
+  <main class="menu-wrapper">
+
+    <!-- ENTRÉES -->
+    <section class="menu-section" data-cat="entrees">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">Entrées</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#e8e0d8"/><path d="M30 42 Q40 20 50 42" stroke="#c4b8a8" stroke-width="2" fill="none"/><circle cx="40" cy="18" r="6" fill="#c4b8a8"/><path d="M20 50 Q40 35 60 50" stroke="#c4b8a8" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Velouté de butternut</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Crème de courge butternut, huile de noisette, chips de lard et herbes fraîches du marché.</p>
+            <span class="card-badge">Végétarien</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#dde8e0"/><ellipse cx="40" cy="35" rx="18" ry="10" fill="#bdd4c2"/><ellipse cx="40" cy="30" rx="12" ry="7" fill="#9bbfa3"/><circle cx="33" cy="24" r="3" fill="#7aa382"/><circle cx="47" cy="22" r="2.5" fill="#7aa382"/><circle cx="40" cy="20" r="2" fill="#7aa382"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Tartare de Saint-Jacques</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Noix de Saint-Jacques marinées au citron vert, avocat, concombre et caviar de truite.</p>
+            <span class="card-badge">Signature</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#e8ddd8"/><rect x="20" y="28" width="40" height="18" rx="3" fill="#d4b8a8"/><rect x="24" y="22" width="8" height="6" rx="1" fill="#c4a898"/><rect x="36" y="20" width="8" height="8" rx="1" fill="#c4a898"/><rect x="48" y="24" width="8" height="4" rx="1" fill="#c4a898"/><path d="M15 46 Q40 40 65 46" stroke="#b89888" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Terrine de foie gras maison</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Foie gras de canard, brioche toastée, chutney de figues et fleur de sel de Guérande.</p>
+            <span class="card-badge">Incontournable</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#e0e8f0"/><circle cx="40" cy="32" r="16" fill="#c8d8e8"/><circle cx="40" cy="32" r="10" fill="#b0c4d8"/><path d="M28 22 Q40 15 52 22" stroke="#90b0c8" stroke-width="2" fill="none"/><circle cx="35" cy="30" r="2" fill="#fff" opacity=".6"/><circle cx="45" cy="34" r="1.5" fill="#fff" opacity=".4"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Œuf parfait aux truffes</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Œuf à 63°C, crème de pomme de terre, copeaux de truffe noire du Périgord et ciboulette.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PLATS -->
+    <section class="menu-section" data-cat="plats">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Plats</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card card-featured">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f0e8d8"/><ellipse cx="40" cy="38" rx="22" ry="12" fill="#d8c4a0"/><ellipse cx="40" cy="34" rx="16" ry="9" fill="#c8a878"/><path d="M30 25 Q40 18 50 25 Q48 32 40 34 Q32 32 30 25Z" fill="#b89060"/><circle cx="36" cy="28" r="1.5" fill="#fff" opacity=".5"/></svg>
+          </div>
+          <div class="card-ribbon">Chef recommande</div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Filet de bœuf Rossini</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Filet de bœuf Black Angus, escalope de foie gras poêlée, sauce Périgueux et gratin dauphinois.</p>
+            <span class="card-badge card-badge--gold">Bestseller</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#dde8f0"/><path d="M18 42 Q40 28 62 42" fill="#b0cce0" stroke="none"/><ellipse cx="40" cy="36" rx="14" ry="6" fill="#90b8d0"/><path d="M26 30 L40 22 L54 30" stroke="#78a0bc" stroke-width="2" fill="none"/><circle cx="40" cy="20" r="4" fill="#60889c"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Dos de cabillaud rôti</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Cabillaud de ligne, beurre blanc au citron, vierge de tomates cerises et purée de céleri.</p>
+            <span class="card-badge">Pêche du jour</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#e8f0e0"/><ellipse cx="40" cy="38" rx="20" ry="10" fill="#c8e0b0"/><ellipse cx="40" cy="34" rx="14" ry="7" fill="#b0d090"/><path d="M32 28 L38 20 L44 28" stroke="#90b868" stroke-width="2" fill="none"/><circle cx="40" cy="18" r="5" fill="#78a050" opacity=".8"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Risotto aux morilles</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Riz Carnaroli, morilles fraîches, parmesan 24 mois, beurre de truffe et persil plat.</p>
+            <span class="card-badge">Végétarien</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f0e0e0"/><ellipse cx="40" cy="38" rx="20" ry="10" fill="#e0b8b8"/><path d="M22 30 Q40 20 58 30 L56 40 Q40 50 24 40Z" fill="#d09090"/><circle cx="32" cy="30" r="3" fill="#c07070"/><circle cx="48" cy="32" r="2.5" fill="#c07070"/><circle cx="40" cy="27" r="2" fill="#c07070"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Magret de canard aux cerises</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Magret rosé, sauce griotte au poivre long, écrasé de pommes de terre à l'huile d'olive.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DESSERTS -->
+    <section class="menu-section" data-cat="desserts">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Desserts</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f8f0e0"/><rect x="24" y="30" width="32" height="20" rx="4" fill="#e8d090"/><ellipse cx="40" cy="30" rx="16" ry="6" fill="#f0c840"/><path d="M40 24 L40 14" stroke="#c8a020" stroke-width="2"/><path d="M36 14 Q40 8 44 14" fill="#e06040" stroke="none"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Soufflé au Grand Marnier</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Soufflé chaud à l'orange, coulis de mandarine et glace vanille Bourbon.</p>
+            <span class="card-badge card-badge--warm">15 min</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f8e8f0"/><ellipse cx="40" cy="38" rx="18" ry="8" fill="#e8b8d0"/><ellipse cx="40" cy="32" rx="14" ry="6" fill="#d890b8"/><ellipse cx="40" cy="26" rx="10" ry="5" fill="#c870a0"/><path d="M38 12 Q40 6 42 12" stroke="#a05080" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Entremet framboise litchi</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Mousse légère au litchi, insert framboise, glaçage miroir et biscuit joconde.</p>
+            <span class="card-badge">Signature</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f8f0e8"/><rect x="22" y="36" width="36" height="14" rx="2" fill="#d4a868"/><rect x="26" y="28" width="28" height="10" rx="2" fill="#c89048"/><rect x="30" y="22" width="20" height="8" rx="2" fill="#bc7830"/><rect x="34" y="18" width="12" height="6" rx="2" fill="#b06020"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Mille-feuille à la vanille</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Feuilletage caramélisé, crème diplomate à la vanille de Madagascar, éclats de pralin.</p>
+            <span class="card-badge card-badge--gold">Incontournable</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img placeholder">
+            <svg viewBox="0 0 80 60" fill="none"><rect width="80" height="60" fill="#f0f0f8"/><circle cx="40" cy="32" r="16" fill="#d0d0e8"/><circle cx="40" cy="32" r="10" fill="#b8b8d8"/><path d="M32 32 Q40 24 48 32 Q40 40 32 32Z" fill="#9898c8"/><circle cx="38" cy="28" r="2" fill="#fff" opacity=".6"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-name">Tarte tatin revisitée</h3>
+              <span class="card-price">XX €</span>
+            </div>
+            <p class="card-desc">Pommes fondantes caramélisées, pâte feuilletée inversée, glace au calvados.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BOISSONS -->
+    <section class="menu-section" data-cat="boissons">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Boissons</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="drinks-grid">
+        <div class="drink-col">
+          <h4 class="drink-col-title">Vins au verre</h4>
+          <div class="drink-item"><span>Sancerre blanc 2022</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Saint-Émilion rouge 2019</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Côtes de Provence rosé 2023</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Champagne Blanc de Blancs</span><span class="drink-price">XX €</span></div>
+        </div>
+        <div class="drink-col">
+          <h4 class="drink-col-title">Sans alcool</h4>
+          <div class="drink-item"><span>Eau minérale (75cl)</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Jus de raisin artisanal</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Kombucha du moment</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Limonade maison</span><span class="drink-price">XX €</span></div>
+        </div>
+        <div class="drink-col">
+          <h4 class="drink-col-title">Cafés &amp; infusions</h4>
+          <div class="drink-item"><span>Espresso</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Café noisette</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Infusion du jardin</span><span class="drink-price">XX €</span></div>
+          <div class="drink-item"><span>Thé Darjeeling 1ère récolte</span><span class="drink-price">XX €</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Le Jardin des Saveurs</p>
+      <p class="footer-info">12 rue des Fleurs, 75006 Paris &nbsp;·&nbsp; 01 XX XX XX XX</p>
+      <p class="footer-allergens">Informations allergènes disponibles sur demande auprès de notre équipe.</p>
+    </div>
+  </footer>
+
+  <script src="menu.js"></script>
+</body>
+</html>
