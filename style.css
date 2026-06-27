@@ -170,7 +170,18 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: sticky;
+  top: calc(2.8rem + 4rem);
+  background: var(--cream);
+  z-index: 50;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  padding: .5rem 1.5rem;
+}
+
+body.embed-mode .section-header {
+  top: 3.2rem;
 }
 
 .section-tag {

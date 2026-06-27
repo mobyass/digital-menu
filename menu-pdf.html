@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu PDF — Le Jardin des Saveurs</title>
+  <title>Menu PDF — L'Ancre Bleue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -11,11 +11,9 @@
 </head>
 <body>
 
-  <!-- BARRE RETOUR (hors PDF) -->
-  <div class="top-bar no-print">
+  <!-- BARRE RETOUR -->
+  <div class="top-bar">
     <a href="index.html" class="back-link">← Retour à l'accueil</a>
-    <span class="top-label">Aperçu du menu PDF</span>
-    <button class="print-btn" onclick="window.print()">Imprimer / Télécharger PDF</button>
   </div>
 
   <!-- PAGE A4 -->
@@ -29,9 +27,9 @@
           <div class="orn-diamond"></div>
           <div class="orn-line"></div>
         </div>
-        <p class="header-eyebrow">Restaurant gastronomique</p>
-        <h1 class="header-title">Le Jardin<br /><em>des Saveurs</em></h1>
-        <p class="header-sub">Une cuisine de terroir revisitée avec passion</p>
+        <p class="header-eyebrow">Restaurant de la mer</p>
+        <h1 class="header-title">L'Ancre<br /><em>Bleue</em></h1>
+        <p class="header-sub">Poissons et fruits de mer frais, pêche du jour</p>
         <div class="header-ornament">
           <div class="orn-line"></div>
           <div class="orn-diamond"></div>
@@ -52,11 +50,11 @@
 
           <div class="dish">
             <div class="dish-row">
-              <span class="dish-name">Velouté de butternut</span>
+              <span class="dish-name">Plateau d'huîtres</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Crème de courge, huile de noisette, chips de lard et herbes fraîches</p>
+            <p class="dish-desc">Huîtres fines de claire n°3, mignonette au vinaigre de cidre, citron et pain de seigle</p>
           </div>
 
           <div class="dish">
@@ -70,20 +68,20 @@
 
           <div class="dish">
             <div class="dish-row">
-              <span class="dish-name">Terrine de foie gras maison</span>
+              <span class="dish-name">Carpaccio de daurade</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Foie gras de canard, brioche toastée, chutney de figues et fleur de sel</p>
+            <p class="dish-desc">Daurade royale, huile d'olive citronnée, fleur de sel et herbes marines</p>
           </div>
 
           <div class="dish">
             <div class="dish-row">
-              <span class="dish-name">Œuf parfait aux truffes</span>
+              <span class="dish-name">Velouté de homard</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Œuf à 63°C, crème de pomme de terre, copeaux de truffe noire du Périgord</p>
+            <p class="dish-desc">Bisque de homard breton, crème fraîche, éclats de homard et huile de persil</p>
           </div>
         </section>
 
@@ -97,11 +95,11 @@
 
           <div class="dish dish--featured">
             <div class="dish-row">
-              <span class="dish-name">Filet de bœuf Rossini <span class="dish-star">★</span></span>
+              <span class="dish-name">Langouste grillée</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Black Angus, foie gras poêlé, sauce Périgueux et gratin dauphinois</p>
+            <p class="dish-desc">Demi-langouste bretonne au beurre citronné, fenouil braisé et pommes de terre nouvelles</p>
           </div>
 
           <div class="dish">
@@ -115,20 +113,20 @@
 
           <div class="dish">
             <div class="dish-row">
-              <span class="dish-name">Risotto aux morilles</span>
+              <span class="dish-name">Risotto aux fruits de mer</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Riz Carnaroli, morilles fraîches, parmesan 24 mois et beurre de truffe</p>
+            <p class="dish-desc">Riz Carnaroli, crevettes, coquillages et calamars, fumet de poisson et parmesan</p>
           </div>
 
           <div class="dish">
             <div class="dish-row">
-              <span class="dish-name">Magret de canard aux cerises</span>
+              <span class="dish-name">Bouillabaisse du pêcheur</span>
               <span class="dish-dots"></span>
               <span class="dish-price">XX €</span>
             </div>
-            <p class="dish-desc">Magret rosé, sauce griotte au poivre long, écrasé de pommes de terre</p>
+            <p class="dish-desc">Poissons de roche, rouille maison, croûtons frottés à l'ail et gruyère râpé</p>
           </div>
         </section>
 
@@ -178,16 +176,18 @@
 
           <div class="drinks-cols">
             <div class="drinks-col">
-              <p class="drinks-col-h">Vins au verre</p>
-              <div class="d-row"><span>Sancerre blanc 2022</span><span>XX €</span></div>
-              <div class="d-row"><span>Saint-Émilion rouge 2019</span><span>XX €</span></div>
-              <div class="d-row"><span>Champagne Blanc de Blancs</span><span>XX €</span></div>
+              <p class="drinks-col-h">Softs &amp; jus</p>
+              <div class="d-row"><span>Eau minérale 75cl</span><span>XX €</span></div>
+              <div class="d-row"><span>Citronnade maison</span><span>XX €</span></div>
+              <div class="d-row"><span>Jus de fruits frais du jour</span><span>XX €</span></div>
+              <div class="d-row"><span>Eau de coco naturelle</span><span>XX €</span></div>
             </div>
             <div class="drinks-col">
-              <p class="drinks-col-h">Sans alcool &amp; cafés</p>
-              <div class="d-row"><span>Eau minérale 75cl</span><span>XX €</span></div>
-              <div class="d-row"><span>Kombucha du moment</span><span>XX €</span></div>
+              <p class="drinks-col-h">Cafés &amp; spécialités</p>
               <div class="d-row"><span>Espresso</span><span>XX €</span></div>
+              <div class="d-row"><span>Thé vert menthe</span><span>XX €</span></div>
+              <div class="d-row"><span>Thé glacé pêche-gingembre</span><span>XX €</span></div>
+              <div class="d-row"><span>Virgin mojito</span><span>XX €</span></div>
             </div>
           </div>
         </section>
@@ -202,7 +202,7 @@
           <div class="orn-line"></div>
         </div>
         <p class="footer-addr">12 rue des Fleurs · 75006 Paris · 01 XX XX XX XX</p>
-        <p class="footer-note">★ Recommandé par le chef &nbsp;·&nbsp; Informations allergènes sur demande</p>
+        <p class="footer-note">Informations allergènes sur demande</p>
       </footer>
 
     </div>
