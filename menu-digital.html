@@ -11,6 +11,32 @@
 </head>
 <body>
 
+  <!-- BARRE DE PRÉVISUALISATION -->
+  <div class="preview-bar">
+    <a href="index.html" class="preview-back">← Accueil</a>
+    <div class="preview-toggle">
+      <button class="toggle-btn active" id="btn-desktop" onclick="setView('desktop')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Bureau
+      </button>
+      <button class="toggle-btn" id="btn-phone" onclick="setView('phone')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+        Téléphone
+      </button>
+    </div>
+    <span class="preview-label">Aperçu</span>
+  </div>
+
+  <!-- CONTENEUR MODE TÉLÉPHONE -->
+  <div class="phone-frame-wrapper" id="phone-wrapper">
+    <div class="phone-frame">
+<div class="phone-screen" id="phone-screen">
+        <iframe src="menu-digital.html?embed=1" id="phone-iframe" title="Aperçu téléphone"></iframe>
+      </div>
+      <div class="phone-home-bar"></div>
+    </div>
+  </div>
+
   <!-- HERO -->
   <header class="hero">
     <div class="hero-overlay"></div>
@@ -283,5 +309,32 @@
   </footer>
 
   <script src="menu.js"></script>
+  <script>
+    const isEmbed = new URLSearchParams(location.search).has('embed');
+    if (isEmbed) {
+      document.querySelector('.preview-bar').style.display = 'none';
+      document.querySelector('.phone-frame-wrapper').style.display = 'none';
+      document.body.classList.add('embed-mode');
+    }
+
+    function setView(mode) {
+      const wrapper = document.getElementById('phone-wrapper');
+      const btnD = document.getElementById('btn-desktop');
+      const btnP = document.getElementById('btn-phone');
+      const body = document.body;
+
+      if (mode === 'phone') {
+        wrapper.classList.add('active');
+        body.classList.add('phone-mode');
+        btnP.classList.add('active');
+        btnD.classList.remove('active');
+      } else {
+        wrapper.classList.remove('active');
+        body.classList.remove('phone-mode');
+        btnD.classList.add('active');
+        btnP.classList.remove('active');
+      }
+    }
+  </script>
 </body>
 </html>

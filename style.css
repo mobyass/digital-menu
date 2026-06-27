@@ -415,3 +415,119 @@ body {
   .menu-wrapper { padding: 2.5rem 1rem; gap: 3.5rem; }
   .drinks-grid { padding: 1.5rem; gap: 1.5rem; }
 }
+
+/* ===== BARRE PRÉVISUALISATION ===== */
+.preview-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .65rem 1.5rem;
+  gap: 1rem;
+}
+
+.preview-back {
+  font-size: .78rem;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.preview-back:hover { color: #fff; }
+
+.preview-label {
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.25);
+  white-space: nowrap;
+}
+
+.preview-toggle {
+  display: flex;
+  background: rgba(255,255,255,.08);
+  border-radius: 100px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .75rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.45);
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: .35rem .9rem;
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.toggle-btn.active {
+  background: #fff;
+  color: #111;
+}
+
+/* Compense la barre de prévisualisation */
+.hero { margin-top: 2.8rem; min-height: calc(100vh - 2.8rem); }
+.cat-nav { top: 2.8rem; }
+
+/* Mode iframe : supprime le décalage */
+body.embed-mode .hero { margin-top: 0; min-height: 100vh; }
+body.embed-mode .cat-nav { top: 0; }
+
+/* ===== MODE TÉLÉPHONE ===== */
+.phone-frame-wrapper {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: 2.8rem;
+  z-index: 999;
+  background: rgba(10,10,10,.92);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+}
+.phone-frame-wrapper.active { display: flex; }
+
+body.phone-mode > *:not(.preview-bar):not(.phone-frame-wrapper) {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.phone-frame {
+  width: 390px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 60px rgba(0,0,0,.5);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.phone-screen {
+  flex: 1;
+  overflow: hidden;
+}
+
+.phone-screen iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.phone-home-bar {
+  display: none;
+  width: 120px;
+  height: 4px;
+  background: rgba(255,255,255,.3);
+  border-radius: 2px;
+  margin: 8px auto 2px;
+}
